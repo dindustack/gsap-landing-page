@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins";
   background: #8c6c79;
   color: #fff;
+  font-family: "Poppins";
   width: 100%;
   height: 100vh;
 }
@@ -81,8 +81,8 @@ ul {
 
 .img-wrapper02 {
   position: absolute;
-  top: 0;
   left: 650px;
+  top: 0;
 }   
 
 .img-wrapper02 .img02 {
@@ -96,23 +96,50 @@ ul {
 /* TEXT */
 .text {
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
 
 .text h1 {
-  font-size: 120px;
   font-family: 'Tinos';
+  font-size: 120px;
   font-weight: lighter;
   letter-spacing: 5px;
 }
 
 .text p {
-  font-size: 40px;
   font-family: 'Tinos';
-  text-transform: uppercase;
-  letter-spacing: 5px;
+  font-size: 40px;
   font-weight: lighter;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+/* DESCRIPTION */
+.desc {
+  position: absolute;
+  bottom: 70px;
+  display: flex;
+  left: 200px;
+}
+
+.desc ul {
+  margin-right: 50px;
+}
+
+.desc ul li {
+  border-bottom: 1px solid #FFF;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.desc p {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 2;
+  width: 250px;
 }
