@@ -67,22 +67,31 @@ ul {
 
 /* IMAGES */
 .img-wrapper01 {
-  background: url('./images/Image01.jpeg');
+  position: absolute;
+  top: 120px;
+  left: 200px;
 }
-.imag01 {
+.img-wrapper01 .img01 {
+  background: url("./images/Image01.jpeg") no-repeat;
+  background-position: 0%;
+  background-size: contain;
+  height: 500px;
+  width: 350px;
 }
 
 .img-wrapper02 {
-}
-.img02 {
+  position: absolute;
+  top: 0;
+  left: 650px;
+}   
+
+.img-wrapper02 .img02 {
+  background: url("./images/Image02.jpeg") no-repeat;
+  background-position: 0%;
+  background-size: contain;
+  height: 100vh;
+  width: 800px;
 }
 
-.menu {
-}
-.ios-menu {
-}
+/* TEXT */
 
-.search {
-}
-.ios-search {
-}
