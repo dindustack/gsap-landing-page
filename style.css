@@ -78,6 +78,10 @@ ul {
   background-size: contain;
   height: 500px;
   width: 350px;
+
+  opacity: 0;
+  animation: image-appear 0.0001s linear forwards;
+  animation-delay: 1.6s;
 }
 
 .img-wrapper02 {
@@ -92,6 +96,19 @@ ul {
   background-size: contain;
   height: 100vh;
   width: 800px;
+
+  opacity: 0;
+  animation: image-appear 0.0001s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes image-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* TEXT */
@@ -214,4 +231,35 @@ ul {
   background-size: cover;
   height: 200px;
   width: 300px;
+}
+
+/* BLOCKS */
+.block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: rgb(163, 124, 140);
+  animation: block-appear 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 1s;
+}
+
+.img-wrapper02 .block {
+  animation-delay: 1.4s;
+}
+
+@keyframes block-appear {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  50% {
+    left: 100%;
+    width: 0%;
+  }
 }
