@@ -120,10 +120,9 @@
         duration: 1.5,
         delay: 2.5,
         opacity: 0,
-        x: -50,
+        x: -30,
         ease: "expo.out",
         stagger: {
-          // from: "edges",
           amount: 0.08,
         },
       });
@@ -140,6 +139,52 @@
         duration: 1.5,
         delay: 2,
         y: 100,
+        ease: "expo.out",
+      });
+
+      // DESCRIPTION
+      gsap.from(".desc ul li", {
+        duration: 1.5,
+        delay: 2,
+        opacity: 0,
+        y: 20,
+        ease: "expo.out",
+        stagger: {
+          amount: 0.1,
+        },
+      });
+
+      gsap.from(".desc p", {
+        duration: 1.5,
+        delay: 2.3,
+        opacity: 0,
+        y: 20,
+        ease: "expo.out",
+      });
+
+      // SCROLLDOWN
+      gsap.from(".scrolldown", {
+        duration: 1.5,
+        delay: 2.7,
+        opacity: 0,
+        y: 200,
+        ease: "expo.out",
+      });
+
+      // BOTTOMNAV
+      gsap.from(".bottomnav", {
+        duration: 1.5,
+        delay: 3.2,
+        opacity: 0,
+        y: 30,
+        ease: "expo.out",
+      });
+
+      gsap.from(".bottomnav .next", {
+        duration: 1.5,
+        delay: 3.5,
+        opacity: 0,
+        x: -20,
         ease: "expo.out",
       });
     </script>
