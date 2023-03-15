@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modelle Agency</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -46,7 +46,6 @@
       <div class="img-wrapper02">
         <div class="img02"></div>
         <div class="block"></div>
-
       </div>
     </div>
 
@@ -62,7 +61,10 @@
         <li>Volume 01</li>
         <li>Volume 02</li>
       </ul>
-      <p>We work with a wide range of clients, including fashion designers, advertising agencies, and production companies.</p>
+      <p>
+        We work with a wide range of clients, including fashion designers,
+        advertising agencies, and production companies.
+      </p>
     </div>
 
     <!-- SCROLLDOWN -->
@@ -84,12 +86,33 @@
         <div class="bottomnav-img"></div>
       </div>
     </div>
-    
 
     <!-- icons -->
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      // TEXT
+      gsap.from(".text h1 .hidetext", {
+        duration: 1.5,
+        delay: 1.6,
+        y: "100%",
+        ease: "expo.out",
+      });
+
+      gsap.from(".text p .hidetext", {
+        duration: 1.5,
+        delay: 2,
+        y: "100%",
+        ease: "expo.out",
+      });
+    </script>
   </body>
 </html>

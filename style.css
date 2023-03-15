@@ -118,6 +118,7 @@ ul {
   top: 50%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
+  width: 1000px;
 }
 
 .text h1 {
@@ -142,7 +143,17 @@ ul {
   font-weight: lighter;
   letter-spacing: 5px;
   text-transform: uppercase;
+
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 100%;
 }
+
+.text p .hidetext {
+  position: absolute;
+}
+
 
 /* DESCRIPTION */
 .desc {
