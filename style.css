@@ -7,7 +7,6 @@
 }
 
 body {
-  background: #8c6c79;
   color: #fff;
   font-family: "Poppins";
   width: 100%;
@@ -17,6 +16,15 @@ body {
 
 ul {
   list-style: none;
+}
+
+.bg {
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 0%;
+  background: #8c6c79;
+  z-index: -1;
 }
 
 .navbar {
@@ -64,6 +72,7 @@ ul {
   padding: 0 20px;
   font-size: 10px;
   font-weight: 500;
+  letter-spacing: 1px;
 }
 
 /* IMAGES */
@@ -81,7 +90,7 @@ ul {
 
   opacity: 0;
   animation: image-appear 0.0001s linear forwards;
-  animation-delay: 1.6s;
+  animation-delay: 2.2s;
 }
 
 .img-wrapper02 {
@@ -99,7 +108,7 @@ ul {
 
   opacity: 0;
   animation: image-appear 0.0001s linear forwards;
-  animation-delay: 2s;
+  animation-delay: 2.4s;
 }
 
 @keyframes image-appear {
@@ -266,7 +275,7 @@ ul {
 }
 
 .img-wrapper02 .block {
-  animation-delay: 1.4s;
+  animation-delay: 1.8s;
 }
 
 @keyframes block-appear {
